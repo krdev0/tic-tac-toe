@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/overlay.css" />
     <link rel="stylesheet" href="styles/config.css" />
+    <link rel="stylesheet" href="styles/game.css" />
   </head>
   <body>
     <div id="backdrop"></div>
@@ -29,46 +30,46 @@
           </div>
         </form>
       </aside>
-      <section id="game-configuration">
+      <section id="game-config">
         <ol>
           <li>
             <article>
               <h2>Player 1</h2>
               <h3>PLACEHOLDER</h3>
-              <p>X</p>
-              <button class="btn btn-alt">Edit</button>
+              <p class="player-symbol">X</p>
+              <button class="btn btn-alt" id="edit-player-1">Edit</button>
             </article>
           </li>
           <li>
             <article>
               <h2>Player 2</h2>
               <h3>PLACEHOLDER</h3>
-              <p>O</p>
-              <button class="btn btn-alt">Edit</button>
+              <p class="player-symbol">O</p>
+              <button class="btn btn-alt" id="edit-player-2">Edit</button>
             </article>
           </li>
         </ol>
         <button class="btn">Start New Game</button>
       </section>
       <section id="active-game">
-        <article>
+        <article id="game-over">
           <h3>You won, <span id="winner-name">PLAYER NAME</span></h3>
           <p>Click "Start new game above, to start a new game"</p>
         </article>
 
         <p>It's your turn <span id="active-player-name">Player 1</span></p>
-        <ol>
+        <ol id="game-board">
+          <li>X</li>
           <li></li>
-          <li></li>
-          <li></li>
+          <li>O</li>
 
           <li></li>
-          <li></li>
+          <li>X</li>
           <li></li>
 
+          <li>O</li>
           <li></li>
-          <li></li>
-          <li></li>
+          <li>O</li>
         </ol>
       </section>
     </main>
