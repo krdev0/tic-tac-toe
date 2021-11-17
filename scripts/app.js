@@ -7,6 +7,7 @@ const gameFieldData = [
 let editedPlayer = 0;
 let activePlayer = 0;
 let currentRound = 1;
+let gameIsOver = false;
 
 const players = [
   {
@@ -28,6 +29,7 @@ const currentPlayerName = document.querySelector("#active-player-name");
 const editPlayer1Btn = document.querySelector("#edit-player-1");
 const editPlayer2Btn = document.querySelector("#edit-player-2");
 const cancelPlayerModal = document.querySelector("#cancel-player-config");
+const gameOverElement = document.querySelector("#game-over");
 
 const configForm = document.querySelector("form");
 const configError = document.querySelector("#config-error");
