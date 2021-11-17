@@ -9,6 +9,7 @@ function closePlayerConfig() {
   backdrop.style.display = "none";
   configForm.firstElementChild.classList.remove("error");
   configError.textContent = "";
+  configForm.firstElementChild.lastElementChild.value = '';
 }
 
 function savePlayerName(event) {
@@ -30,6 +31,5 @@ function savePlayerName(event) {
 
   players[editedPlayer - 1].name = enteredPlayerName;
 
-  playerConfigModal.style.display = "none";
-  backdrop.style.display = "none";
+  closePlayerConfig();
 }

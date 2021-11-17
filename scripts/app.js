@@ -27,3 +27,5 @@ cancelPlayerModal.addEventListener("click", closePlayerConfig);
 backdrop.addEventListener("click", closePlayerConfig);
 
 configForm.addEventListener("submit", savePlayerName);
+
+console.log(configForm);
